@@ -15,12 +15,5 @@ main()
     z=b%10;
     
     c=(x*x*x)+(y*y*y)+(z*z*z);
-    if(c==num)
-    {
-        printf("The Value is Armstrong Value");
-    }
-    else
-    {
-        printf("The Value is not Armstrong Value");
-    }
+     printf("%d",c==num);
 }
