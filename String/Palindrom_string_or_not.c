@@ -1,32 +1,31 @@
+
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
 
 void main()
 {
-    char name[50];//string declare
-    printf("Enter a string : ");
-    gets(name);//user prompt
-    int i;//i is for loop counter
-    int length = strlen(name);
-    int palindrom = 1;//to check palindrom value
-
-    for (i=0; i<length/2; i++)
+    char a[50];//string declare
+    printf("Enter the string : ");
+    gets(a);//user prompt
+    int length=strlen(a);//length of string
+    int i,j,x=length-1,check;//i and j for loop counters
+    
+    for(i=0; i<length; i++)
     {
-        if (name[i] != name[length - 1 - i])
+        check=0;
+        if(a[i]==a[x])
         {
-            palindrom = 0;  // Not a palindrom value
-            break;
+            check=1;//checking palindrom or not
         }
+        x--;
     }
-
-    if (palindrom==1)
+    if(check==1)
     {
-        printf("The string is a palindrom");
-    } 
+        printf("String is Palindrom");
+    }
     else
     {
-        printf("The string is not a palindrom");
+        printf("String is Not Palindrom");
     }
 }
-
