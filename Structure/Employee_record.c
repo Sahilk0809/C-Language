@@ -8,57 +8,59 @@ struct Employee
 	char emp_name[50];	
 	int emp_age;	
 	char emp_role[50];	
-	char emp_city[20];	
+	char emp_city[50];	
 	int emp_experience;
-	char emp_company_name[30];		
+	char emp_company_name[50];		
 };
 
 void main()
 {
-	char emp_name[50],emp_role[50],emp_city[20],emp_company_name[30];
-	int n;
+	char a[50],b[50],c[50],d[50];
+	int n;//number of employees
 	printf("Enter the number of employees : ");
-	scanf("%d",&n);
+	scanf("%d",&n);//user input
 	struct Employee employee[n];
-	int i;
+	int i;//loop counter
 	
 	for(i=0; i<n; i++)
 	{
+	    //user input of details of employees
 		printf("\nEmployee %d\n",i+1);
 		printf("Enter your ID : ");
 		scanf("%d",&employee[i].emp_id);
 		
 		printf("Enter your Name : ");
-		scanf("%s",&employee[i].emp_name);
-		strcpy(emp_name,emp_name);
+		scanf(" %[^\n]employee",&a);
+		strcpy(employee[i].emp_name,a);
 		
 		printf("Enter your age : ");
 		scanf("%d",&employee[i].emp_age);
 		
 		printf("Enter your role : ");
-		scanf("%s",&employee[i].emp_role);
-		strcpy(emp_role,emp_role);
+		scanf(" %[^\n]employee",&b);
+		strcpy(employee[i].emp_role,b);
 		
 		printf("Enter your city : ");
-		scanf("%s",&employee[i].emp_city);
-		strcpy(emp_city,emp_city);
+		scanf(" %[^\n]employee",&c);
+		strcpy(employee[i].emp_city,c);
 		
 		printf("Enter Your experience : ");
 		scanf("%d",&employee[i].emp_experience);
 		
 		printf("Enter Your company name : ");
-		scanf("%s",&employee[i].emp_company_name);
-		strcpy(emp_company_name,emp_company_name);
+		scanf(" %[^\n]employee",&d);
+		strcpy(employee[i].emp_company_name,d);
 		printf("\n");
 	}
 	for(i=0; i<n; i++)
 	{
+	    //print details of employees
 		printf("ID : %d\n",employee[i].emp_id);
 		printf("Name : %s\n",employee[i].emp_name);
 		printf("Age : %d\n",employee[i].emp_age);
-		printf("Course : %s\n",employee[i].emp_role);
+		printf("Role : %s\n",employee[i].emp_role);
 		printf("City : %s\n",employee[i].emp_city);
-		printf("Standard : %d\n",employee[i].emp_experience);
-		printf("School : %s\n\n",employee[i].emp_company_name);
+		printf("Experience : %d\n",employee[i].emp_experience);
+		printf("Company Name : %s\n\n",employee[i].emp_company_name);
 	}
 }
