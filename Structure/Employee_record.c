@@ -30,25 +30,25 @@ void main()
 		scanf("%d",&employee[i].emp_id);
 		
 		printf("Enter your Name : ");
-		scanf(" %[^\n]employee",&a);
+		scanf(" %[^\n]s",&a);
 		strcpy(employee[i].emp_name,a);
 		
 		printf("Enter your age : ");
 		scanf("%d",&employee[i].emp_age);
 		
 		printf("Enter your role : ");
-		scanf(" %[^\n]employee",&b);
+		scanf(" %[^\n]s",&b);
 		strcpy(employee[i].emp_role,b);
 		
 		printf("Enter your city : ");
-		scanf(" %[^\n]employee",&c);
+		scanf(" %[^\n]s",&c);
 		strcpy(employee[i].emp_city,c);
 		
 		printf("Enter Your experience : ");
 		scanf("%d",&employee[i].emp_experience);
 		
 		printf("Enter Your company name : ");
-		scanf(" %[^\n]employee",&d);
+		scanf(" %[^\n]s",&d);
 		strcpy(employee[i].emp_company_name,d);
 		printf("\n");
 	}
