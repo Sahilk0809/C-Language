@@ -27,25 +27,25 @@ void main()
 		scanf("%d",&student[i].stu_id);
 		
 		printf("Enter your Name : ");
-		scanf(" %[^\n]student",&a);
+		scanf(" %[^\n]s",&a);
 		strcpy(student[i].stu_name,a);
 		
 		printf("Enter your age : ");
 		scanf("%d",&student[i].stu_age);
 		
 		printf("Enter your Course : ");
-		scanf(" %[^\n]student",&b);
+		scanf(" %[^\n]s",&b);
 		strcpy(student[i].stu_course,b);
 		
 		printf("Enter your city : ");
-		scanf(" %[^\n]student",&c);
+		scanf(" %[^\n]s",&c);
 		strcpy(student[i].stu_city,c);
 		
 		printf("Enter Your standard : ");
 		scanf("%d",&student[i].stu_standard);
 		
 		printf("Enter Your school : ");
-		scanf(" %[^\n]student",&d);
+		scanf(" %[^\n]s",&d);
 		strcpy(student[i].stu_school,d);
 		printf("\n");
 	}
