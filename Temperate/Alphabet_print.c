@@ -1,6 +1,7 @@
 #include<stdio.h>
+#include<conio.h>
 
-main()
+void main()
 {
 	
 	char alphabet='a';
