@@ -1,6 +1,7 @@
 #include<stdio.h>
+#include<conio.h>
 
-main()
+int main()
 {
 	int x,y,ans;
 	
@@ -13,4 +14,5 @@ main()
 	ans=x*x - 2*x*y + y*y;
 	
 	printf("the ans is :%d",ans);
+ return 0;
 }
